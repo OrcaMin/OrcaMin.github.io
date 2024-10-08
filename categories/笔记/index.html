@@ -108,20 +108,20 @@ html {
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 10px;
+  width: 10px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #54b5a0 linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background: #54b5a0;
   cursor: pointer;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 html >::-webkit-scrollbar-thumb:hover {
-  background: #54b5a0 linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background: #24615f;
 }
 body {
   background-color: var(--color-site-body);
@@ -1757,7 +1757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1728352624826),
+    lastupdate: new Date(1728381101491),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc","lastupdate"],
@@ -2277,40 +2277,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
-                  
-                  
-                  
-                    active-action="action-categories"
-                  >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
-                  
-                  
-                  
-                    active-action="action-tags"
-                  >
-                  <i class='fa-solid fa-tags fa-fw'></i>标签
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="归档"
                   
                   
@@ -2327,44 +2293,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
-                  
-                  
-                  
-                    active-action="action-about"
-                  >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://map.bemanicn.com/" title="音游地图"
-                  
-                  
-                  
-                    active-action="action-https:mapbemanicncom"
-                  >
-                  <i class='fa-solid fa-gamepad fa-fw'></i>音游地图
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-moon fa-fw'></i>
+                  <i class='fas fa-moon fa-fw'></i>主题
                 </a>
               <li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://copel-popn.github.io/" title="中二剧情"
+                  
+                  
+                  
+                    active-action="action-https:copel-popngithubio"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>中二剧情
+                </a>
+                
+              </li>
             
           
           
@@ -2414,40 +2363,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
-                  
-                  
-                  
-                    active-action="action-categories"
-                  >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
-                  
-                  
-                  
-                    active-action="action-tags"
-                  >
-                  <i class='fa-solid fa-tags fa-fw'></i>标签
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="归档"
                   
                   
@@ -2464,44 +2379,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
-                  
-                  
-                  
-                    active-action="action-about"
-                  >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://map.bemanicn.com/" title="音游地图"
-                  
-                  
-                  
-                    active-action="action-https:mapbemanicncom"
-                  >
-                  <i class='fa-solid fa-gamepad fa-fw'></i>音游地图
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-moon fa-fw'></i>
+                  <i class='fas fa-moon fa-fw'></i>主题
                 </a>
               <li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://copel-popn.github.io/" title="中二剧情"
+                  
+                  
+                  
+                    active-action="action-https:copel-popngithubio"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>中二剧情
+                </a>
+                
+              </li>
             
           
             
@@ -2744,7 +2642,34 @@ Ctrl+ +&#x2F;-号 升降级
       <div class="social-wrapper">
         
           
-            <a href="https://orcamin.github.io/"
+            <a href="/atom.xml"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:me@xxx.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/volantis-x/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
               class="social fa-solid fa-headphones-alt flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2882,7 +2807,7 @@ Ctrl+ +&#x2F;-号 升降级
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/10/06/hello-world/"><div class="item"><time>2024-10-08</time><span>笔记</span></div><span>Hexo简略说明</span></a></li><li><a class="widget-last" href="/2024/10/06/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class="item"><time>2024-10-08</time><span>笔记</span></div><span>markdown学习笔记</span></a></li><li><a class="widget-last" href="/2024/10/07/Metaverse%E4%BA%BA%E7%89%A9/"><div class="item"><time>2024-10-08</time></div><span>Metaverse人物</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/10/07/Metaverse%E4%BA%BA%E7%89%A9/"><div class="item"><time>2024-10-08</time></div><span>Metaverse（未开始</span></a></li><li><a class="widget-last" href="/2024/10/06/hello-world/"><div class="item"><time>2024-10-08</time><span>笔记</span></div><span>Hexo简略说明</span></a></li><li><a class="widget-last" href="/2024/10/06/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class="item"><time>2024-10-08</time><span>笔记</span></div><span>markdown学习笔记</span></a></li></ul>
   </div>
 </section>
 
@@ -2969,7 +2894,7 @@ Ctrl+ +&#x2F;-号 升降级
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2017-2021 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2021 Orca</a></p>
 
         </div>
       
