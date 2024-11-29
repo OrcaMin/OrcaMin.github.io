@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://orcamin.github.io/2024/10/09/webpage/"/>
+  <link rel="canonical" href="https://orcamin.github.io/2024/11/29/kali/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>写网页 - 龟壳</title>
-  <meta name="keywords" content="HTML,CSS,null">
+  <title>wsl-kali安装 - 龟壳</title>
+  <meta name="keywords" content="kali,linux,null">
   <meta desc name="description" content="如题 - Orca - 龟壳">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="写网页">
-<meta property="og:url" content="https://orcamin.github.io/2024/10/09/webpage/index.html">
+<meta property="og:title" content="wsl-kali安装">
+<meta property="og:url" content="https://orcamin.github.io/2024/11/29/kali/index.html">
 <meta property="og:site_name" content="龟壳">
-<meta property="og:description" content="第一行代码，hello,world 初始 1&lt;p&gt;hello,world&lt;&#x2F;p&gt;  &lt;p&gt;：paragraph，段落&lt;h1&gt;：一级标题&lt;h2&gt;：二级标题，以此类推至h6   添加样式 格式 1&lt;p style&#x3D;&quot;width: 20px&quot;&gt;文字内容&lt;&#x2F;p&gt;  &lt;&gt;内加style&#x3D;“ ”">
+<meta property="og:description" content="Windows通过WSL安装kali-linux出现问题 解决：wsl --update  将kali迁移到非C盘 12345678910查看已安装wsl -l -v导出wsl --export kali-linux E:\WSL\kali-linux.tar注销wsl --unregister kali-linux导入wsl --import kali-linux E:\WSL\kali-li">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-10-08T20:41:54.000Z">
-<meta property="article:modified_time" content="2024-11-28T23:01:23.384Z">
+<meta property="article:published_time" content="2024-11-28T22:59:23.000Z">
+<meta property="article:modified_time" content="2024-11-29T02:23:33.989Z">
 <meta property="article:author" content="Orca">
-<meta property="article:tag" content="HTML">
-<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="kali">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2194,7 +2194,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header always shadow floatable blur show"  >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header always shadow floatable blur "  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2424,7 +2424,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post blank' style="display: none;">
+      <div id="half" class='cover-wrapper post blank' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2440,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/10/09/webpage/">
+  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/11/29/kali/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="龟壳">
   </span>
@@ -2454,7 +2454,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img itemprop="image" class='headimg' src='https://s2.loli.net/2024/10/07/1iBaxXC7d8nN5vR.jpg'/>
+        <img itemprop="image" class='headimg' src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
       </a>
     </div>
   
@@ -2463,15 +2463,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        写网页
+        wsl-kali安装
       </h1>
       <div class='new-meta-box'>
         
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="https://orcamin.github.io/" rel="nofollow">
-    <img itemprop="image" src="https://s2.loli.net/2024/10/07/uYTb6S4NC5eoKm1.png" class="lazyload" data-srcset="https://s2.loli.net/2024/10/07/uYTb6S4NC5eoKm1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <a itemprop="url" class='author' href="https://OrcaMin.github.io" rel="nofollow">
+    <img itemprop="image" src="https://c-ssl.dtstatic.com/uploads/item/202003/19/20200319181755_hnmsk.thumb.1000_0.jpg" class="lazyload" data-srcset="https://c-ssl.dtstatic.com/uploads/item/202003/19/20200319181755_hnmsk.thumb.1000_0.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">Orca</p>
   </a>
 </div>
@@ -2494,17 +2494,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-10-09T04:41:54+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-11-29T06:59:23+08:00">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Oct 9, 2024</p>
+    <p>发布于：Nov 29, 2024</p>
   </a>
 </div>
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T07:01:23+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T10:23:33+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Nov 29, 2024</p>
@@ -2524,7 +2524,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="写网页" data-path="/2024/10/09/webpage/">
+      <span id="lc-pv" data-title="wsl-kali安装" data-path="/2024/11/29/kali/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2546,71 +2546,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="第一行代码，hello-world"><a href="#第一行代码，hello-world" class="headerlink" title="第一行代码，hello,world"></a>第一行代码，hello,world</h2><ul>
-<li><p>初始</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>hello,world<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>&lt;p&gt;</code>：paragraph，段落<br><code>&lt;h1&gt;</code>：一级标题<br><code>&lt;h2&gt;</code>：二级标题，以此类推至h6</p>
+    <ul>
+<li><p>Windows通过WSL安装kali-linux出现问题</p>
+<p>解决：<code>wsl --update</code></p>
 </li>
-</ul>
-<h2 id="添加样式"><a href="#添加样式" class="headerlink" title="添加样式"></a>添加样式</h2><ul>
-<li><p>格式</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;width: 20px&quot;</span>&gt;</span>文字内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>&lt;&gt;内加<code>style=“ ”</code>，“ ”内加<code>xxx: xxx</code></p>
-<p>px：pixel，像素</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Orca</span> <span class="attr">style</span>=<span class="string">&quot;background: powderblue&quot;</span>&gt;</span>自定义标签<span class="tag">&lt;/<span class="name">Orca</span>&gt;</span>			# 字多少模块就多大</span><br><span class="line"><span class="tag">&lt;<span class="name">Orca</span> <span class="attr">style</span>=<span class="string">&quot;background: powderblue;display: block;&quot;</span>&gt;</span>自定义标签但块<span class="tag">&lt;/<span class="name">Orca</span>&gt;</span> # block</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background: red&quot;</span>&gt;</span>默认style标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span>		# 默认block</span><br></pre></td></tr></table></figure>
+<li><p>将kali迁移到非C盘</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">查看已安装</span><br><span class="line">wsl -l -v</span><br><span class="line">导出</span><br><span class="line">wsl --export kali-linux E:\WSL\kali-linux.tar</span><br><span class="line">注销</span><br><span class="line">wsl --unregister kali-linux</span><br><span class="line">导入</span><br><span class="line">wsl --import kali-linux E:\WSL\kali-linux E:\WSL\kali-linux.tar</span><br><span class="line">删除.tar</span><br><span class="line">del E:\WSL\kali-linux.tar</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>定义模块</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">box</span> <span class="attr">style</span>=<span class="string">&quot;</span></span></span><br><span class="line"><span class="string"><span class="tag">	width: 200px;				# 宽度</span></span></span><br><span class="line"><span class="string"><span class="tag">    height: 50px;				# 高度</span></span></span><br><span class="line"><span class="string"><span class="tag">    background: powderblue;		# 盒子颜色</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: block;				# 样式为块</span></span></span><br><span class="line"><span class="string"><span class="tag">    margin: 30px auto;			# 边距 上下30 左右自动</span></span></span><br><span class="line"><span class="string"><span class="tag">    border: 5px solid black;	# 边框</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 20px;				# 高度20 </span></span></span><br><span class="line"><span class="string"><span class="tag">    &quot;</span>&gt;</span></span><br><span class="line">    盒子	</span><br><span class="line"><span class="tag">&lt;/<span class="name">box</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>margin</code>：外边距，与其他模块之间的距离<br><code>padding</code>：内边距，与内容的距离，防止移动端显示贴边什么的<br><code>border</code>：边框<br><code>align</code>：对齐</p>
-</li>
-<li><p>分区</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>&lt;div&gt;</code>：division，分区，无实意</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;</span></span></span><br><span class="line"><span class="string"><span class="tag">	background-color: powderblue;</span></span></span><br><span class="line"><span class="string"><span class="tag">	padding: 10px;</span></span></span><br><span class="line"><span class="string"><span class="tag">	text-align: center;</span></span></span><br><span class="line"><span class="string"><span class="tag">	font-size: 12px;</span></span></span><br><span class="line"><span class="string"><span class="tag">&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>font</code>：字体</p>
-</li>
-<li><p>插入图片</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#x27;url&#x27;</span> <span class="attr">alt</span>=<span class="string">&quot;图片名&quot;</span> <span class="attr">width</span>=<span class="string">&quot;xxpx&quot;</span> <span class="attr">height</span>=<span class="string">&quot;xxpx&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>alt</code>：alternative text，替代文本</p>
-<p>本地图片：放同级目录，用文件名</p>
-</li>
-<li><p>插入链接</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="目前用到的函数汇总"><a href="#目前用到的函数汇总" class="headerlink" title="目前用到的函数汇总"></a>目前用到的函数汇总</h3><ul>
-<li><p><code>&lt;style&gt;</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">width: 10px;</span><br><span class="line">height: 10px;</span><br><span class="line">max-width: 700px;		# 防止占全屏</span><br><span class="line">text-aligh: center;		# 文字对齐: 居中</span><br><span class="line">line-height: 1.7;		# 行高: 1.7倍</span><br><span class="line">margin: 30px auto;		# 外边距: 上下 左右auto(自动两边相等-居中)</span><br><span class="line">padding: 15px;			# 内边距</span><br><span class="line">border: 5px solid pink	# 边框: 参数 样式 颜色</span><br><span class="line">border-radius: 5px;		# 边框圆角</span><br></pre></td></tr></table></figure>
-
-<p><code>radius</code>：半径</p>
-</li>
-</ul>
-<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><ul>
-<li><p><code>&lt;meta&gt;</code>：元数据 放head里 整个网页的属性</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;UTF-8&quot; /&gt;	# 字符集为UTF-8</span><br><span class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;	# 兼容老浏览器(可有可无)</span><br><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;</span><br><span class="line"># 显示宽度为设备宽度 初始比例1.0</span><br><span class="line">&lt;title&gt;Document&lt;/title&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>&lt;div&gt;</code>：division 可包含任意种类标签 因此用的最多</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2></li>
-<li><p>问题：固定在底部的div遮挡其他元素</p>
-<p>方案：为<code>body</code>设置<code>margin-bottom</code>值为置底<code>&lt;div&gt;</code>的<code>height</code></p>
-</li>
-</ul>
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>Ctrl + D	选下一个相同字符<br>Alt + 左键	添加光标，同时编辑多处地方<br>Shift + Alt + ↑&#x2F;↓	复制到上&#x2F;下一行</p>
-<h2 id="HTML-CSS-JavaScript"><a href="#HTML-CSS-JavaScript" class="headerlink" title="HTML &amp; CSS &amp; JavaScript"></a>HTML &amp; CSS &amp; JavaScript</h2><ul>
-<li><p><strong>HTML (HyperText Markup Language)：是什么</strong></p>
-<p>相当于房子的结构，定义网页的内容和结构，如标题、段落、图像、列表等。</p>
-</li>
-<li><p><strong>CSS (Cascading Style Sheets)：看起来</strong> </p>
-<p>相当于房子的装修，定义网页的样式布局，例如颜色、字体、间距、背景等。</p>
-</li>
-<li><p><strong>JavaScript：做什么</strong> </p>
-<p>相当于房子的电器和各种互动装置，为网页添加交互性和动态行为。 JavaScript 可以响应用户操作，修改网页内容，与服务器通信，以及实现各种复杂的动画和特效。</p>
-</li>
+<li><p>图形化界面添加快捷方式</p>
+<p>在终端setting.json中添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;guid&quot;: &quot;&#123;55ca431a-3a87-5fb3-83cd-11ececc031d2&#125;&quot;,</span><br><span class="line">        &quot;hidden&quot;: false,</span><br><span class="line">        &quot;icon&quot;: &quot;file:///c:/users/&lt;windows user&gt;/pictures/icons/kali-menu.png&quot;,</span><br><span class="line">        &quot;name&quot;: &quot;Win-KeX&quot;,</span><br><span class="line">        &quot;commandline&quot;: &quot;wsl kex wtstart&quot;,</span><br><span class="line">    	&quot;startingDirectory&quot; : &quot;//wsl$/kali-linux/home/&lt;kali user&gt;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
   </div>
@@ -2634,7 +2579,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p>本文永久链接是：<a href="https://orcamin.github.io/2024/10/09/webpage/">https://orcamin.github.io/2024/10/09/webpage/</a></p>
+                  <p>本文永久链接是：<a href="https://orcamin.github.io/2024/11/29/kali/">https://orcamin.github.io/2024/11/29/kali/</a></p>
                 
               
             </blockquote>
@@ -2653,17 +2598,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-10-09T04:41:54+08:00">
+          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-11-29T06:59:23+08:00">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Oct 9, 2024</p>
+    <p>发布于：Nov 29, 2024</p>
   </a>
 </div>
 
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T07:01:23+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T10:23:33+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Nov 29, 2024</p>
@@ -2675,8 +2620,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HTML/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>HTML</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CSS/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>CSS</p></a></div>
-  <span hidden itemprop="keywords">HTML CSS</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/kali/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>kali</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/linux/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>linux</p></a></div>
+  <span hidden itemprop="keywords">kali linux</span>
 
 
         
@@ -2696,20 +2641,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/10/27/Android-Studio/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android Studio 遇到的问题</p>
+      
+        <a class='next' href='/2024/10/27/Android-Studio/'>
+          <p class='title'>Android Studio 遇到的问题<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>开发者指南
 安装失败：运行 ‘app’ 时出错 The application could not be installed: INSTALL_FAILED_TEST_ONLY Installa...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/10/06/hexo/'>
-          <p class='title'>Hexo备忘<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>点击 文档 &amp; 故障排除 &amp; GitHub 了解更多
-一、常用1. 文章①新建文章1$ hexo new &quot;My New Post&quot;
-
-详情：Writing
-...</p>
         </a>
       
     </div>
@@ -2725,7 +2661,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/10/09/webpage/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/11/29/kali/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2779,19 +2715,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
-    
-  <header>
-    
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%EF%BC%8Chello-world"><span class="toc-text">第一行代码，hello,world</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F"><span class="toc-text">添加样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E7%94%A8%E5%88%B0%E7%9A%84%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB"><span class="toc-text">目前用到的函数汇总</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-text">标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-CSS-JavaScript"><span class="toc-text">HTML &amp; CSS &amp; JavaScript</span></a></li></ol>
-    </div>
-  </section>
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
 
   
 
@@ -2850,14 +2776,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3787,7 +3713,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/10/09/webpage/","name":"写网页"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"写网页","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/10/09/webpage/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/10/09/webpage/","wordCount":0,"datePublished":"2024-10-08T20:41:54.000Z","dateModified":"2024-11-28T23:01:23.384Z","articleSection":"NOTE","keywords":"HTML,CSS","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/1iBaxXC7d8nN5vR.jpg","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/11/29/kali/","name":"wsl-kali安装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"wsl-kali安装","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/11/29/kali/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/11/29/kali/","wordCount":0,"datePublished":"2024-11-28T22:59:23.000Z","dateModified":"2024-11-29T02:23:33.989Z","articleSection":"NOTE","keywords":"kali,linux","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp","width":1024,"height":768}}]</script>
 
 
 
