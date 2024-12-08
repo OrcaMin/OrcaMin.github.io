@@ -41,11 +41,11 @@
 <meta property="og:title" content="wsl-kali安装">
 <meta property="og:url" content="https://orcamin.github.io/2024/11/29/kali/index.html">
 <meta property="og:site_name" content="龟壳">
-<meta property="og:description" content="Windows通过WSL安装kali-linux出现问题 解决：wsl --update  将kali迁移到非C盘 12345678910查看已安装wsl -l -v导出wsl --export kali-linux E:\WSL\kali-linux.tar注销wsl --unregister kali-linux导入wsl --import kali-linux E:\WSL\kali-li">
+<meta property="og:description" content="Windows通过WSL安装kali-linux出现问题 解决：wsl --update  hyper-v删除虚拟交换机一直卡在正在应用更改 解决：  关闭虚拟机 断网 重启hyper-v：（成功） win + R  service.msc 关闭并重启“Hyper-V 虚拟机管理”   PowerShell强制删除 管理员运行 获取虚拟交换机名称Get-VMSwitch 强制删除Remove-V">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-11-28T22:59:23.000Z">
-<meta property="article:modified_time" content="2024-11-29T02:54:25.558Z">
+<meta property="article:modified_time" content="2024-12-08T06:23:34.482Z">
 <meta property="article:author" content="Orca">
 <meta property="article:tag" content="kali">
 <meta property="article:tag" content="linux">
@@ -1761,7 +1761,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1732848922005),
+    lastupdate: new Date(1733639138471),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc","lastupdate"],
@@ -2504,10 +2504,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T10:54:25+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-08T14:23:34+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Nov 29, 2024</p>
+    <p>更新于：Dec 8, 2024</p>
   </a>
 </div>
 
@@ -2550,6 +2550,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>Windows通过WSL安装kali-linux出现问题</p>
 <p>解决：<code>wsl --update</code></p>
 </li>
+<li><p>hyper-v删除虚拟交换机一直卡在正在应用更改</p>
+<p>解决：</p>
+<ul>
+<li>关闭虚拟机</li>
+<li>断网</li>
+<li>重启hyper-v：<strong>（成功）</strong><ul>
+<li>win + R  service.msc</li>
+<li>关闭并重启“Hyper-V 虚拟机管理”</li>
+</ul>
+</li>
+<li>PowerShell强制删除<ul>
+<li>管理员运行</li>
+<li>获取虚拟交换机名称<code>Get-VMSwitch</code></li>
+<li>强制删除<code>Remove-VMSwitch -Name &quot;虚拟交换机名称&quot; -Force</code></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>将kali迁移到非C盘</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">查看已安装</span><br><span class="line">wsl -l -v</span><br><span class="line">导出</span><br><span class="line">wsl --export kali-linux E:\WSL\kali-linux.tar</span><br><span class="line">注销</span><br><span class="line">wsl --unregister kali-linux</span><br><span class="line">导入</span><br><span class="line">wsl --import kali-linux E:\WSL\kali-linux E:\WSL\kali-linux.tar</span><br><span class="line">删除.tar</span><br><span class="line">del E:\WSL\kali-linux.tar</span><br></pre></td></tr></table></figure>
 </li>
@@ -2558,7 +2576,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 <li><p>图形化界面添加快捷方式</p>
 <p>在终端setting.json中添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;guid&quot;: &quot;&#123;55ca431a-3a87-5fb3-83cd-11ececc031d2&#125;&quot;,</span><br><span class="line">        &quot;hidden&quot;: false,</span><br><span class="line">        &quot;icon&quot;: &quot;file:///c:/users/&lt;windows user&gt;/pictures/icons/kali-menu.png&quot;,</span><br><span class="line">        &quot;name&quot;: &quot;Win-KeX&quot;,</span><br><span class="line">        &quot;commandline&quot;: &quot;wsl kex wtstart&quot;,</span><br><span class="line">    	&quot;startingDirectory&quot; : &quot;//wsl$/kali-linux/home/&lt;kali user&gt;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;guid&quot;: &quot;&#123;55ca431a-3a87-5fb3-83cd-11ececc031d2&#125;&quot;,</span><br><span class="line">        &quot;hidden&quot;: false,</span><br><span class="line">        &quot;icon&quot;: &quot;file:///c:/users/&lt;windows user&gt;/pictures/icons/kali-menu.png&quot;,</span><br><span class="line">        &quot;name&quot;: &quot;Win-KeX&quot;,</span><br><span class="line">        &quot;commandline&quot;: &quot;wsl kex wtstart&quot;,</span><br><span class="line">    	&quot;startingDirectory&quot; : &quot;//wsl$/kali-linux/home/&lt;kali user&gt;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置网络（桥接）</p>
+<p>%Userprofile%创建一个.wslconfig</p>
+<p>配置静态网络<br>sudo vim &#x2F;etc&#x2F;network&#x2F;interfaces</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Include files from /etc/network/interfaces.d:</span><br><span class="line">source /etc/network/interfaces.d/*</span><br><span class="line"></span><br><span class="line"># The loopback network interface</span><br><span class="line">auto lo</span><br><span class="line">iface lo inet loopback</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet static</span><br><span class="line">address 192.168.0.123</span><br><span class="line">gateway 192.168.0.111</span><br><span class="line">netmask 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<p>sudo vim &#x2F;etc&#x2F;resolv.conf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#GeneratedbyNetworkManager</span><br><span class="line">domain</span><br><span class="line">nameserver 192.168.0.111</span><br><span class="line">search localdomain</span><br></pre></td></tr></table></figure>
+
+<p>sudo vim &#x2F;etc&#x2F;wsl.conf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[boot]</span><br><span class="line">systemd=true</span><br><span class="line">[network]</span><br><span class="line">generateResolvConf=false</span><br></pre></td></tr></table></figure>
+
+<p>sudo &#x2F;etc&#x2F;init.d&#x2F;networking restart</p>
+</li>
 </ul>
 
   </div>
@@ -2611,10 +2643,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T10:54:25+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-08T14:23:34+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Nov 29, 2024</p>
+    <p>更新于：Dec 8, 2024</p>
   </a>
 </div>
 
@@ -2704,7 +2736,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/11/29/kali/"><div class="item"><time>2024-11-29</time><span>NOTE</span></div><span>wsl-kali安装</span></a></li><li><a class="widget-last" href="/2024/10/09/webpage/"><div class="item"><time>2024-11-29</time><span>NOTE</span></div><span>写网页</span></a></li><li><a class="widget-last" href="/2024/10/27/Android-Studio/"><div class="item"><time>2024-10-27</time><span>NOTE</span></div><span>Android Studio 遇到的问题</span></a></li><li><a class="widget-last" href="/2024/10/06/hexo/"><div class="item"><time>2024-10-27</time><span>NOTE</span></div><span>Hexo备忘</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/11/29/kali/"><div class="item"><time>2024-12-08</time><span>NOTE</span></div><span>wsl-kali安装</span></a></li><li><a class="widget-last" href="/2024/10/09/webpage/"><div class="item"><time>2024-11-29</time><span>NOTE</span></div><span>写网页</span></a></li><li><a class="widget-last" href="/2024/10/27/Android-Studio/"><div class="item"><time>2024-10-27</time><span>NOTE</span></div><span>Android Studio 遇到的问题</span></a></li><li><a class="widget-last" href="/2024/10/06/hexo/"><div class="item"><time>2024-10-27</time><span>NOTE</span></div><span>Hexo备忘</span></a></li></ul>
   </div>
 </section>
 
@@ -3716,7 +3748,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/11/29/kali/","name":"wsl-kali安装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"wsl-kali安装","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/11/29/kali/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/11/29/kali/","wordCount":0,"datePublished":"2024-11-28T22:59:23.000Z","dateModified":"2024-11-29T02:54:25.558Z","articleSection":"NOTE","keywords":"kali,linux","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/11/29/kali/","name":"wsl-kali安装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"wsl-kali安装","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/11/29/kali/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/11/29/kali/","wordCount":0,"datePublished":"2024-11-28T22:59:23.000Z","dateModified":"2024-12-08T06:23:34.482Z","articleSection":"NOTE","keywords":"kali,linux","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp","width":1024,"height":768}}]</script>
 
 
 
