@@ -1757,7 +1757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1733639138471),
+    lastupdate: new Date(1733641537778),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc","lastupdate"],
@@ -2488,20 +2488,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 Windows通过WSL安装kali-linux出现问题
 解决：wsl --update
 
-hyper-v删除虚拟交换机一直卡在正在应用更改
-解决：
-
-关闭虚拟机
-断网
-重启hyper-v：（成功）
-win + R  service.msc
-关闭并重启“Hyper-V 虚拟机管理”
-
-
-PowerShell强制删除
-管理员运行
-获取虚拟交换机名称Get-VMSwitch
-强制删除Remov...
+将kali迁移到非C盘
+12345678910查看已安装wsl -l -v导出wsl --export kali-linux E:\WSL\kali-linux.tar注销wsl --unregister kali-linux导入wsl --import kali-linux E:\WSL\kali...
       
     
   </div>
@@ -2871,7 +2859,7 @@ PowerShell强制删除
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>1.4k 字</div>
+          <div>1.7k 字</div>
         </div>
       
 
