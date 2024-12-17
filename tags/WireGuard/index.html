@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://orcamin.github.io/tags/tsl证书/"/>
+  <link rel="canonical" href="https://orcamin.github.io/tags/wireguard/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Tag: TSL证书 - 龟壳</title>
+  <title>Tag: WireGuard - 龟壳</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="如题 - Orca - 龟壳">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="龟壳">
-<meta property="og:url" content="https://orcamin.github.io/tags/TSL%E8%AF%81%E4%B9%A6/index.html">
+<meta property="og:url" content="https://orcamin.github.io/tags/WireGuard/index.html">
 <meta property="og:site_name" content="龟壳">
 <meta property="og:description" content="如题">
 <meta property="og:locale" content="en_US">
@@ -2445,8 +2445,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
       
     
     
@@ -2454,7 +2452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/17/domain-name/">
+  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/18/immortalwrt-wireguard/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="龟壳">
   </span>
@@ -2466,44 +2464,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/12/17/domain-name/">
-        <img itemprop="image" class='headimg' alt="将namesilo域名解析到cloudflare并使用acme为域名申请证书并在uhttpd上配置（ipv6）" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
+      <a class='headimg-a' href="/2024/12/18/immortalwrt-wireguard/">
+        <img itemprop="image" class='headimg' alt="在immortalwrt搭建WireGuard" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
       </a>
     </div>
   
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/17/domain-name/"  itemprop="url">
-        将namesilo域名解析到cloudflare并使用acme为域名申请证书并在uhttpd上配置（ipv6）
+      <a href="/2024/12/18/immortalwrt-wireguard/"  itemprop="url">
+        在immortalwrt搭建WireGuard
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        简介：
+        ps：在隧道中是通过IPv4通信的，因此内网设备不需要IPv6地址
+前提
+wan已获得IPv6地址
 
-基于IPv6
+已为软路由地址绑定域名配置DDNS
 
-将Namesilo域名解析到Cloudflare
+luci-proto-wireguard
 
-给软路由网页绑定域名配置DDNS
-
-使用uHTTPd给域名颁发自签证书
-
-为域名申请正规证书（ACME）并在uHTTPd上配置
+qrencode
 
 
-Namesilo域名管理
-Cloudflare仪表盘
-解析前提
-域名
-
-1. Cloudflare添加域名
-进入Cloudflare仪表盘添加域名
-现有域：&lt;域名&gt;
-选择F...
+添加并配置端口
+网络 -&gt; 接口 -&gt; 添加新接口
+名称：wireguard（随意）
+协议：WireGuard VPN 创建
+常规设置
+生成密钥对
+监听端口：&lt;要开放的端...
       
     
   </div>
@@ -2511,7 +2505,7 @@ Cloudflare仪表盘
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-12-17T23:19:57+08:00">2024-12-17</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-12-18T02:25:32+08:00">2024-12-18</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/NOTE/">NOTE</a>
@@ -2524,87 +2518,7 @@ Cloudflare仪表盘
       </div>
       
         <div>
-          <a class='readmore' href='/2024/12/17/domain-name/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/08/Namesilo_ACME/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="龟壳">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="龟壳">
-    <meta itemprop="description" content="如题">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/12/08/Namesilo_ACME/">
-        <img itemprop="image" class='headimg' alt="颁发ACME证书以及遇到的问题（Namesilo）" src='https://s2.loli.net/2024/10/07/EGl2R8zQmMUSo4L.webp'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/08/Namesilo_ACME/"  itemprop="url">
-        颁发ACME证书以及遇到的问题（Namesilo）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        简介：
-
-在软路由上使用为Namesilo域名颁发ACME证书并在uHTTPd上配置
-已弃用Namesilo解析：解析速度慢，常访问不上
-
-申请证书服务 -&gt; ACME证书 -&gt; 添加
-
-常规设置 -&gt; 启用√
-
-常规设置 -&gt; 域名
-
-质询验证 -&gt; 验证方式: DNS
-
-质询验证 -&gt; DNS API: dns_namesilo
-
-质询验证 -&gt;...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-08T23:40:36+08:00">2024-12-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/NOTE/">NOTE</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/NOTE/" itemprop="url"><span itemprop="name">NOTE</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/08/Namesilo_ACME/' itemprop="url">
+          <a class='readmore' href='/2024/12/18/immortalwrt-wireguard/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3758,7 +3672,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/tags/TSL证书/","name":"TSL证书"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/tags/WireGuard/","name":"WireGuard"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
