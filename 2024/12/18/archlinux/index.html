@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://orcamin.github.io/archives/2024/11/"/>
+  
+  <link rel="canonical" href="https://orcamin.github.io/2024/12/18/archlinux/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2024/11 - 龟壳</title>
-  <meta name="keywords" content="null">
+  <title>Arch Linux & 桌面环境（KDE）安装 - 龟壳</title>
+  <meta name="keywords" content="Arch Linux,KDE,null">
   <meta desc name="description" content="如题 - Orca - 龟壳">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="龟壳">
-<meta property="og:url" content="https://orcamin.github.io/archives/2024/11/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arch Linux &amp; 桌面环境（KDE）安装">
+<meta property="og:url" content="https://orcamin.github.io/2024/12/18/archlinux/index.html">
 <meta property="og:site_name" content="龟壳">
-<meta property="og:description" content="如题">
+<meta property="og:description" content="Arch Linux安装1. 验证启动模式（BIOS&#x2F;UEFI）可以列出 efivars 目录以验证启动模式： 1ls &#x2F;sys&#x2F;firmware&#x2F;efi&#x2F;efivars  如果目录不存在，系统可能以 BIOS 或 CSM 模式启动。 如果目录存在。系统就是以UEFI启动。 2. 连接网络（三选一） 网线连接  1dhcpcd   WiFi连接  1wifi-menu   ADSL宽带连">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-12-18T07:08:31.000Z">
+<meta property="article:modified_time" content="2024-12-18T20:14:45.946Z">
 <meta property="article:author" content="Orca">
+<meta property="article:tag" content="Arch Linux">
+<meta property="article:tag" content="KDE">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2420,7 +2424,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  blank' style="display: ;">
+      <div id="half" class='cover-wrapper post blank' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2435,22 +2439,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/11/29/kali/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/18/archlinux/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="龟壳">
   </span>
@@ -2459,72 +2449,574 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="如题">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/11/29/kali/">
-        <img itemprop="image" class='headimg' alt="wsl-kali安装以及网络配置" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/11/29/kali/"  itemprop="url">
-        wsl-kali安装以及网络配置
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        
-Windows通过WSL安装kali-linux出现问题
-解决：wsl --update
-
-将kali迁移到非C盘
-12345678910查看已安装wsl -l -v导出wsl --export kali-linux E:\WSL\kali-linux.tar注销wsl --unregister kali-linux导入wsl --import kali-linux E:\WSL\kali...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        Arch Linux & 桌面环境（KDE）安装
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-11-29T06:59:23+08:00">2024-11-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/NOTE/">NOTE</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/NOTE/" itemprop="url"><span itemprop="name">NOTE</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/11/29/kali/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="https://OrcaMin.github.io" rel="nofollow">
+    <img itemprop="image" src="https://c-ssl.dtstatic.com/uploads/item/202003/19/20200319181755_hnmsk.thumb.1000_0.jpg" class="lazyload" data-srcset="https://c-ssl.dtstatic.com/uploads/item/202003/19/20200319181755_hnmsk.thumb.1000_0.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Orca</p>
+  </a>
 </div>
 
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/NOTE/">NOTE</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/NOTE/" itemprop="url"><span itemprop="name">NOTE</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-12-18T15:08:31+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 18, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-19T04:14:45+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 19, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="Arch Linux & 桌面环境（KDE）安装" data-path="/2024/12/18/archlinux/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h5 id="Arch-Linux安装"><a href="#Arch-Linux安装" class="headerlink" title="Arch Linux安装"></a>Arch Linux安装</h5><h6 id="1-验证启动模式（BIOS-UEFI）"><a href="#1-验证启动模式（BIOS-UEFI）" class="headerlink" title="1. 验证启动模式（BIOS&#x2F;UEFI）"></a>1. 验证启动模式（BIOS&#x2F;UEFI）</h6><p>可以列出 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/UEFI#UEFI_variables">efivars</a> 目录以验证启动模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /sys/firmware/efi/efivars</span><br></pre></td></tr></table></figure>
+
+<p>如果目录不存在，系统可能以 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/BIOS">BIOS</a> 或 CSM 模式启动。</p>
+<p>如果目录存在。系统就是以UEFI启动。</p>
+<h6 id="2-连接网络（三选一）"><a href="#2-连接网络（三选一）" class="headerlink" title="2. 连接网络（三选一）"></a>2. 连接网络（三选一）</h6><ul>
+<li>网线连接</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dhcpcd</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>WiFi连接</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wifi-menu</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ADSL宽带连接</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pppoe-setup     #配置</span><br><span class="line">systemctl start adsl    #连接ADSL</span><br></pre></td></tr></table></figure>
+
+<p>验证网络连接：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping baidu.com</span><br></pre></td></tr></table></figure>
+
+<h6 id="3-更新系统时间"><a href="#3-更新系统时间" class="headerlink" title="3. 更新系统时间"></a>3. 更新系统时间</h6><p>使用 <a target="_blank" rel="noopener" href="https://jlk.fjfi.cvut.cz/arch/manpages/man/timedatectl.1">timedatectl</a> 确保系统时间是准确的：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl set-ntp true</span><br></pre></td></tr></table></figure>
+
+<h6 id="4-建立硬盘分区"><a href="#4-建立硬盘分区" class="headerlink" title="4. 建立硬盘分区"></a>4. 建立硬盘分区</h6><p>查看硬盘情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk -l</span><br></pre></td></tr></table></figure>
+
+<p>也可以通过lsblk查看硬盘信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsblk</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</span><br><span class="line">loop0       7:0    0 476.7M 1 loop /rn/archiso/sfs/airootfs      #iso镜像</span><br><span class="line">sda           8:0    0 465.8G  0 disk   #465.8G的机械硬盘sda </span><br><span class="line">└─sda1        8:1    0 465.8G  0 part /mnt/home #sda下的第一个分区sda1</span><br><span class="line">sdb           8:16   1  14.6G  0  disk  #16G的启动盘</span><br><span class="line">├─sdb1    8:17    1  588M  0 part  /runarchiso/bootmnt</span><br><span class="line">└─sda2    8:18    1  64M  0  part</span><br><span class="line">nvme0n1     259:0    0 119.2G  0 disk   #119.2G固态硬盘nvme0n1 </span><br><span class="line">├─nvme0n1p1 259:1    0   100G  0 part /mnt  #nme0n1第一个分区nvme0n1p1</span><br><span class="line">└─nvme0n1p2 259:2 0 19.2G   0  part  /mnt/boot/efi  #nme0n1第二个分区nvme0n1p2</span><br></pre></td></tr></table></figure>
+
+<h6 id="5-分区方案"><a href="#5-分区方案" class="headerlink" title="5. 分区方案"></a>5. 分区方案</h6><table>
+<thead>
+<tr>
+<th align="center">BIOS with <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/MBR">MBR</a></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">挂载点</td>
+<td align="center">分区</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Partition_type">分区类型</a></td>
+<td align="center">建议大小</td>
+</tr>
+<tr>
+<td align="center"><code>/mnt</code></td>
+<td align="center"><code>/dev/sda1</code></td>
+<td align="center">Linux</td>
+<td align="center">剩余空间</td>
+</tr>
+<tr>
+<td align="center">[SWAP]</td>
+<td align="center"><code>/dev/sda2</code></td>
+<td align="center">Linux swap</td>
+<td align="center">More than 512 MiB</td>
+</tr>
+<tr>
+<td align="center">UEFI with <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/GPT">GPT</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">挂载点</td>
+<td align="center">分区</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/GUID_Partition_Table#Partition_type_GUIDs">分区类型</a></td>
+<td align="center">建议大小</td>
+</tr>
+<tr>
+<td align="center"><code>/mnt/boot</code></td>
+<td align="center"><code>/dev/sda1</code></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/EFI_system_partition">EFI 系统分区</a></td>
+<td align="center">265–512 MiB</td>
+</tr>
+<tr>
+<td align="center"><code>/mnt</code></td>
+<td align="center"><code>/dev/sda2</code></td>
+<td align="center">Linux x86-64 root (&#x2F;)</td>
+<td align="center">剩余空间</td>
+</tr>
+<tr>
+<td align="center">[SWAP]</td>
+<td align="center"><code>/dev/sda3</code></td>
+<td align="center">Linux swap</td>
+<td align="center">More than 512 MiB</td>
+</tr>
+</tbody></table>
+<p>分区方案解读：如果你是以<code>BIOS</code>模式启动，你就无须创建和挂载<code>/boot</code>分区。</p>
+<p>如果你是以<code>UEFI</code>模式启动，那你就必须创建和挂载<code>/boot</code>分区</p>
+<h6 id="6-分区"><a href="#6-分区" class="headerlink" title="6. 分区"></a>6. 分区</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/</span><br><span class="line">/home</span><br><span class="line">/boot</span><br><span class="line">swap</span><br></pre></td></tr></table></figure>
+
+<p>使用<code>cfdisk</code>分区</p>
+<p><code>BIOS选dos，UEFI的选gpt</code></p>
+<p>通过左右方向键可以选择下面的选项，选择<code>New</code>然后回车</p>
+<ul>
+<li><p><strong>优先</strong>新建<code>/</code>分区</p>
+<ul>
+<li>输入大小然后回车即可创建分区</li>
+</ul>
+</li>
+<li><p>新建<code>/home</code>分区（可选）</p>
+</li>
+<li><p>新建&#x2F;boot分区（BIOS启动不需要）</p>
+<ul>
+<li>不需要太大，256M-512M就可以了</li>
+<li>选中新建的&#x2F;boot分区，下面的光标移到<code>Type</code>选项</li>
+<li>然后选中<code>EFI System</code>回车即可</li>
+</ul>
+</li>
+<li><p>新建swap分区</p>
+<ul>
+<li>大小一般等于你的运行内存大小</li>
+<li>也是和&#x2F;boot分区差不多，要选择<code>type</code></li>
+<li>选中<code>Linux swap</code>然后回车即可</li>
+</ul>
+</li>
+<li><p>确认分区</p>
+<ul>
+<li>光标移动到<code>write</code>然后回车</li>
+<li>输入yes回车确认</li>
+<li>选中<code>Quit</code>，回车即可退出<code>cfdisk</code></li>
+</ul>
+</li>
+<li><p>查看分区</p>
+<ul>
+<li>用<code>lsblk</code></li>
+</ul>
+</li>
+</ul>
+<h6 id="7-格式化分区"><a href="#7-格式化分区" class="headerlink" title="7. 格式化分区"></a>7. 格式化分区</h6><ul>
+<li>&#x2F;</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/sda1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>&#x2F;home（可选）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/sdax</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>&#x2F;boot（BIOS启动不需要）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.fat -F32 /dev/sda2</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>swap</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkswap /dev/sda3</span><br><span class="line">swapon /dev/sda3</span><br></pre></td></tr></table></figure>
+
+<p>问题：格式化失败</p>
+<p>解决：reboot</p>
+<h6 id="8-挂载分区"><a href="#8-挂载分区" class="headerlink" title="8. 挂载分区"></a>8. 挂载分区</h6><ul>
+<li>将<code>/</code>分区挂载到<code>/mnt</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda1 /mnt</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>挂载&#x2F;home分区（（可选））</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sdax /mnt/home</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>&#x2F;mnt下创建&#x2F;boot（BIOS启动不需要）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/boot</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>挂载引导分区</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda2 /mnt/boot</span><br></pre></td></tr></table></figure>
+
+<h6 id="9-更换镜像源"><a href="#9-更换镜像源" class="headerlink" title="9. 更换镜像源"></a>9. 更换镜像源</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/pacman.d/mirrorlist</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>按下<code>/</code>键，输入cn，进入检索模式，搜到cn的字样后<code>回车</code>,蓝色的光标就会出现在cn的下面</p>
+</li>
+<li><p>按下<code>n</code>键可以跳到下一个</p>
+</li>
+<li><p>按下<code>2dd</code>剪切，按下<code>gg</code>回到顶部，按下<code>p</code>粘贴</p>
+</li>
+</ul>
+<h6 id="10-安装基础软件包"><a href="#10-安装基础软件包" class="headerlink" title="10. 安装基础软件包"></a>10. 安装基础软件包</h6><p><a target="_blank" rel="noopener" href="https://www.archlinux.org/packages/?name=base">base</a> 软件包并没有包含全部 live 环境中的程序，<a target="_blank" rel="noopener" href="https://projects.archlinux.org/archiso.git/tree/configs/releng/packages.x86_64">packages.x86_64</a> 页面包含了它们的差异。需要额外安装：</p>
+<ul>
+<li>管理所用<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/File_systems">文件系统</a> 的用户工具</li>
+<li>访问 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/RAID">RAID</a> 或 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/LVM">LVM</a> 分区的工具</li>
+<li>未包含在 <a target="_blank" rel="noopener" href="https://www.archlinux.org/packages/?name=linux-firmware">linux-firmware</a> 中的额外固件</li>
+<li><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Networking">联网</a>需要的程序</li>
+<li><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Text_editor">文本编辑器</a>,</li>
+<li>访问 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Man">man</a> 和 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Info">info</a> 页面的工具： <a target="_blank" rel="noopener" href="https://www.archlinux.org/packages/?name=man-db">man-db</a>, <a target="_blank" rel="noopener" href="https://www.archlinux.org/packages/?name=man-pages">man-pages</a> 和 <a target="_blank" rel="noopener" href="https://www.archlinux.org/packages/?name=texinfo">texinfo</a>.</li>
+</ul>
+<p>如果你还想安装其他软件包组比如 <a target="_blank" rel="noopener" href="https://www.archlinux.org/groups/x86_64/base-devel/">base-devel</a>，请将他们的名字添加到 <em>pacstrap</em> 后，并用空格隔开。你也可以在 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Chroot">#Chroot</a> 之后使用 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Pacman">pacman</a> 手动安装软件包或组。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt base linux linux-firmware base-devel vi vim nano dhcpcd</span><br></pre></td></tr></table></figure>
+
+<h6 id="11-配置系统"><a href="#11-配置系统" class="headerlink" title="11. 配置系统"></a>11. 配置系统</h6><ul>
+<li><p>Fstab</p>
+<ul>
+<li><p>用以下命令生成 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Fstab">fstab</a> 文件 (用 <code>-U</code> 或 <code>-L</code> 选项设置UUID 或卷标)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Change_root">Change root</a> 到新安装的系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arch-chroot /mnt</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>设置时区</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br><span class="line">hwclock --systohc</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>本地化配置</li>
+</ul>
+<p><code>/etc/locale.gen</code> 是一个仅包含注释文档的文本文件。指定您需要的本地化类型，只需移除对应行前面的注释符号（<code>＃</code>）即可，建议选择带 <code>UTF-8</code> 的项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/locale.gen</span><br><span class="line">en_US.UTF-8 UTF-8</span><br><span class="line">zh_CN.UTF-8 UTF-8</span><br></pre></td></tr></table></figure>
+
+<p>执行 <code>locale-gen</code> 以生成 locale 讯息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale-gen</span><br></pre></td></tr></table></figure>
+
+<p>将 LANG&#x3D;en_US.UTF-8 加入 &#x2F;etc&#x2F;locale.conf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/locale.conf</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>设置主机名</p>
+<ul>
+<li><p>xxxxs是你的主机名（自己取个喜欢的名字）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;xxxx&quot; &gt;&gt; /etc/hostname</span><br></pre></td></tr></table></figure>
+
+<p>编辑 &#x2F;etc&#x2F;hosts文件，添加以下内容（xxxx为你的主机名）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/hosts</span><br><span class="line">127.0.0.1    localhost.localdomain    localhost</span><br><span class="line">::1          localhost.localdomain    localhost</span><br><span class="line">127.0.1.1    xxxx.localdomain     xxxx</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>设置root密码</p>
+<ul>
+<li><p>使用passwd命令为root用户增加密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>安装intel-ucode（amd则替换intel）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S intel-ucode</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装引导</p>
+<ul>
+<li><p>如果硬盘上还有别的系统，需要安装 os-prober。如果系统在别的硬盘单独引导，则不需要。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S os-prober</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>BIOS 系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pacman -S grub</span><br><span class="line">grub-install --target=i386-pc /dev/sdX    # sdX 为你的安装硬盘</span><br><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>UEFI 系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pacman -S grub efibootmgr</span><br><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB</span><br><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>安装网络连接组件</p>
+<ul>
+<li><p>无线网络组件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S iw wpa_supplicant dialog netctl  #无线网络</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>后面重启系统后可以使用<code>wifi-menu</code>命令连网</li>
+</ul>
+</li>
+<li><p>有线网络组件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable dhcpcd     #进入系统自动连网</span><br><span class="line">systemctl start dhcpcd      #重启后执行此命令启动网络服务</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h6 id="12-重启"><a href="#12-重启" class="headerlink" title="12. 重启"></a>12. 重启</h6><p>系统到此安装完毕</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br><span class="line">umount -R /mnt</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+
+<h5 id="桌面环境（KDE）安装"><a href="#桌面环境（KDE）安装" class="headerlink" title="桌面环境（KDE）安装"></a>桌面环境（KDE）安装</h5><h6 id="1-添加普通用户"><a href="#1-添加普通用户" class="headerlink" title="1. 添加普通用户"></a>1. 添加普通用户</h6><ul>
+<li><p>如果不添加，安装完桌面后，登录界面没有用户出现(root用户不会出现在gdm登录界面)</p>
+</li>
+<li><p>且使用root权限有风险</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd -m -g users -s /bin/bash xxxx #添加xxxx用户，用户名你自定义</span><br><span class="line">passwd xxxx #为xxxx用户设置密码</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-配置新用户sudo权限"><a href="#2-配置新用户sudo权限" class="headerlink" title="2.配置新用户sudo权限"></a>2.配置新用户sudo权限</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sudoers</span><br></pre></td></tr></table></figure>
+
+<p>在<code>root ALL = (ALL) ALL</code>下添加<code>xxxx ALL = (ALL) ALL</code>;输入<code>:wq!</code>强制保存退出vim</p>
+<h6 id="3-安装声卡驱动"><a href="#3-安装声卡驱动" class="headerlink" title="3. 安装声卡驱动"></a>3. 安装声卡驱动</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S alsa-utils pulseaudio-alsa</span><br></pre></td></tr></table></figure>
+
+<p>Arch Linux默认开启了声音支持，默认静音 可通过<code>alsamixer</code>命令＋字母[M] 取消静音</p>
+<blockquote>
+<p>  方向键上下调节音量 字母[M]取消静音 [Q],[W],[E] 增大 左,右,通道 的音量 [Z],[X],[C] 减小 左,右,通道 的音量</p>
+</blockquote>
+<h6 id="4-安装显卡驱动"><a href="#4-安装显卡驱动" class="headerlink" title="4. 安装显卡驱动"></a>4. 安装显卡驱动</h6><ul>
+<li>查看显卡型号</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lspci | grep -e VGA -e 3D</span><br><span class="line">示例:</span><br><span class="line">00:02.0 VGA compatible controller: NVIDIA Corporation GM204 [GeForce GTX 970] (rev a1)   #(rev a1) 表示正在运行，如果是ff则未运行</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看所有开源驱动：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Ss xf86-video</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据<a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/Xorg">文档</a>选择并安装驱动</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S xf86-video-nouveau</span><br></pre></td></tr></table></figure>
+
+<p>如果笔记本有独显<code>NVIDIA</code>,可一并安装<code>xf86-video-intel nvidia</code></p>
+<blockquote>
+<p>  双显卡查阅<a target="_blank" rel="noopener" href="https://www.archlinux.org/">Arch wiki</a></p>
+</blockquote>
+<h6 id="5-安装Xorg显示服务器"><a href="#5-安装Xorg显示服务器" class="headerlink" title="5. 安装Xorg显示服务器"></a>5. 安装Xorg显示服务器</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pacman -S xorg #安装xorg</span><br><span class="line">pacman -S xf86-input-synaptics #安装触摸板驱动（笔记本）</span><br><span class="line">pacman -S ttf-dejavu wqy-zenhei wqy-microhei    #安装常用字体</span><br></pre></td></tr></table></figure>
+
+<h6 id="6-安装KDE桌面"><a href="#6-安装KDE桌面" class="headerlink" title="6. 安装KDE桌面"></a>6. 安装KDE桌面</h6><ul>
+<li><p>安装plasma-meta元软件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S plasma</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>KDE应用和SDDM图形登录界面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -S kde-applications </span><br><span class="line">pacman -S sddm sddm-kcm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><strong>安装网络管理工具</strong></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S networkmanager netctl</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><strong>开启相关服务</strong></strong></p>
+<p>此处需要root权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable NetworkManager     </span><br><span class="line">systemctl enable sddm</span><br><span class="line">systemctl enable dhcpcd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot # 重启进入桌面</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="滚动更新"><a href="#滚动更新" class="headerlink" title="滚动更新"></a>滚动更新</h5><ul>
+<li><p><code>pacman -Syu</code></p>
+</li>
+<li><p>pacman启用并行下载：将 <code>/etc/pacman.conf</code> 中 <code>[options]</code> 选项 <code>ParallelDownloads</code> 设置成正整数，例如 <code>5</code>，将会同时下载 5 个软件包，如果未设置此选项，软件包将会被依次下载。</p>
+</li>
+</ul>
+<h5 id="管理用户和用户组"><a href="#管理用户和用户组" class="headerlink" title="管理用户和用户组"></a>管理<a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84#">用户和用户组</a></h5><ul>
+<li><p>添加用户：<code>useradd -m -G wheel &lt;username&gt;</code></p>
+<p><code>wheel</code>：管理组，可以访问 <a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/Journal">journal</a> 文件和 <a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/CUPS">CUPS</a> 打印服务，可以用户 sudo和 su 命令权限管理(需要额外设置)。</p>
+</li>
+<li><p>将用户添加到组：<code>gpasswd -a [用户名] [组名]</code></p>
+</li>
+<li><p>修改用户密码：<code>passwd [用户名]</code></p>
+</li>
+<li><p>切换用户：<code>su</code></p>
+</li>
+<li><p>把vim链接到vi：<code>ln -s /usr/bin/vim /usr/bin/vi</code>（提示文件夹已存在就把 <code>/usr/bin/vi</code> 删了）</p>
+</li>
+<li><p>给用户添加sudo权限：<code>visudo</code> 把 <code># wheel ALL=(ALL) ALL</code> 的注释取消</p>
+</li>
+</ul>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href="https://orcamin.github.io/2024/12/18/archlinux/">https://orcamin.github.io/2024/12/18/archlinux/</a></p>
+                
+              
+            </blockquote>
           </div>
         
       
-    
-  </section>
+      <!-- 打赏组件 -->
+      
+    </div>
+  
   
     
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-12-18T15:08:31+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 18, 2024</p>
+  </a>
+</div>
+
+        
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-19T04:14:45+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 19, 2024</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Arch-Linux/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Arch Linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/KDE/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>KDE</p></a></div>
+  <span hidden itemprop="keywords">Arch Linux KDE</span>
+
+
+        
+      
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/12/18/github-domain/'>
+          <p class='title'>github.io绑定域名<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+在 GitHub Pages 仓库新建 CNAME 文件填入域名
+
+进入 GitHub Pages 仓库的 Settings 界面
+
+Settings -&gt; Pages -&gt; Cu...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/12/18/archlinux/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2533,127 +3025,6 @@ Windows通过WSL安装kali-linux出现问题
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://s2.loli.net/2024/10/07/uYTb6S4NC5eoKm1.png'/>
-        </a>
-      
-    
-    
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/NOTE/" href="/categories/NOTE/"
-            active-action="action-categoriesNOTE"
-            ><div class='name'>NOTE</div><div class='badge'>(11)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ACME/" style="font-size: 19px; color: #777">ACME</a> <a href="/tags/Android-Studio/" style="font-size: 14px; color: #999">Android Studio</a> <a href="/tags/Arch-Linux/" style="font-size: 14px; color: #999">Arch Linux</a> <a href="/tags/CSS/" style="font-size: 14px; color: #999">CSS</a> <a href="/tags/Cloudflare/" style="font-size: 19px; color: #777">Cloudflare</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/IPv6/" style="font-size: 24px; color: #555">IPv6</a> <a href="/tags/KDE/" style="font-size: 14px; color: #999">KDE</a> <a href="/tags/Namesilo/" style="font-size: 19px; color: #777">Namesilo</a> <a href="/tags/TSL%E8%AF%81%E4%B9%A6/" style="font-size: 19px; color: #777">TSL证书</a> <a href="/tags/Webhook/" style="font-size: 19px; color: #777">Webhook</a> <a href="/tags/Windows/" style="font-size: 14px; color: #999">Windows</a> <a href="/tags/WireGuard/" style="font-size: 14px; color: #999">WireGuard</a> <a href="/tags/botfather/" style="font-size: 14px; color: #999">botfather</a> <a href="/tags/ddns-go/" style="font-size: 14px; color: #999">ddns-go</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/hexo/" style="font-size: 19px; color: #777">hexo</a> <a href="/tags/immortalwrt/" style="font-size: 24px; color: #555">immortalwrt</a> <a href="/tags/kali/" style="font-size: 14px; color: #999">kali</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/uHTTPd/" style="font-size: 19px; color: #777">uHTTPd</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 19px; color: #777">域名</a> <a href="/tags/%E5%A4%87%E4%BB%BD/" style="font-size: 14px; color: #999">备份</a> <a href="/tags/%E6%BF%80%E6%B4%BB/" style="font-size: 14px; color: #999">激活</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">网络异常</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 14px; color: #999">证书</a> <a href="/tags/%E8%BF%98%E5%8E%9F/" style="font-size: 14px; color: #999">还原</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>11 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>5.9k 字</div>
-        </div>
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-12-19 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
@@ -2682,10 +3053,46 @@ Windows通过WSL安装kali-linux出现问题
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Arch-Linux%E5%AE%89%E8%A3%85"><span class="toc-text">Arch Linux安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%EF%BC%88KDE%EF%BC%89%E5%AE%89%E8%A3%85"><span class="toc-text">桌面环境（KDE）安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%BB%9A%E5%8A%A8%E6%9B%B4%E6%96%B0"><span class="toc-text">滚动更新</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">管理用户和用户组</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2705,13 +3112,14 @@ Windows通过WSL安装kali-linux出现问题
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3657,7 +4065,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/archives/2024/","name":"2024"}},{"@type":"ListItem","position":4,"item":{"@id":"https://orcamin.github.io/archives/2024/11/","name":"11"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/12/18/archlinux/","name":"Arch Linux & 桌面环境（KDE）安装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Arch Linux & 桌面环境（KDE）安装","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/12/18/archlinux/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/12/18/archlinux/","wordCount":0,"datePublished":"2024-12-18T07:08:31.000Z","dateModified":"2024-12-18T20:14:45.946Z","articleSection":"NOTE","keywords":"Arch Linux,KDE","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg","width":1024,"height":768}}]</script>
 
 
 

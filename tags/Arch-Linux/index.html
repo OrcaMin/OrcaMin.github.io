@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://orcamin.github.io/archives/2024/11/"/>
+  <link rel="canonical" href="https://orcamin.github.io/tags/arch-linux/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2024/11 - 龟壳</title>
+  <title>Tag: Arch Linux - 龟壳</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="如题 - Orca - 龟壳">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="龟壳">
-<meta property="og:url" content="https://orcamin.github.io/archives/2024/11/index.html">
+<meta property="og:url" content="https://orcamin.github.io/tags/Arch-Linux/index.html">
 <meta property="og:site_name" content="龟壳">
 <meta property="og:description" content="如题">
 <meta property="og:locale" content="en_US">
@@ -2190,7 +2190,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header always shadow floatable blur "  >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header always shadow floatable blur show"  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2420,7 +2420,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  blank' style="display: ;">
+      <div id="none" class='cover-wrapper  blank' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2434,9 +2434,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
@@ -2450,7 +2452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/11/29/kali/">
+  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/18/archlinux/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="龟壳">
   </span>
@@ -2462,28 +2464,39 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/11/29/kali/">
-        <img itemprop="image" class='headimg' alt="wsl-kali安装以及网络配置" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
+      <a class='headimg-a' href="/2024/12/18/archlinux/">
+        <img itemprop="image" class='headimg' alt="Arch Linux & 桌面环境（KDE）安装" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
       </a>
     </div>
   
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/11/29/kali/"  itemprop="url">
-        wsl-kali安装以及网络配置
+      <a href="/2024/12/18/archlinux/"  itemprop="url">
+        Arch Linux & 桌面环境（KDE）安装
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        
-Windows通过WSL安装kali-linux出现问题
-解决：wsl --update
+        Arch Linux安装1. 验证启动模式（BIOS&#x2F;UEFI）可以列出 efivars 目录以验证启动模式：
+1ls /sys/firmware/efi/efivars
 
-将kali迁移到非C盘
-12345678910查看已安装wsl -l -v导出wsl --export kali-linux E:\WSL\kali-linux.tar注销wsl --unregister kali-linux导入wsl --import kali-linux E:\WSL\kali...
+如果目录不存在，系统可能以 BIOS 或 CSM 模式启动。
+如果目录存在。系统就是以UEFI启动。
+2. 连接网络（三选一）
+网线连接
+
+1dhcpcd
+
+
+WiFi连接
+
+1wifi-menu
+
+
+ADSL...
       
     
   </div>
@@ -2491,7 +2504,7 @@ Windows通过WSL安装kali-linux出现问题
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-11-29T06:59:23+08:00">2024-11-29</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-12-18T15:08:31+08:00">2024-12-18</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/NOTE/">NOTE</a>
@@ -2504,7 +2517,7 @@ Windows通过WSL安装kali-linux出现问题
       </div>
       
         <div>
-          <a class='readmore' href='/2024/11/29/kali/' itemprop="url">
+          <a class='readmore' href='/2024/12/18/archlinux/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2524,7 +2537,8 @@ Windows通过WSL安装kali-linux出现问题
   
 
 
-	
+    
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2720,14 +2734,14 @@ Windows通过WSL安装kali-linux出现问题
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3657,7 +3671,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/archives/2024/","name":"2024"}},{"@type":"ListItem","position":4,"item":{"@id":"https://orcamin.github.io/archives/2024/11/","name":"11"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/tags/Arch Linux/","name":"Arch Linux"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
