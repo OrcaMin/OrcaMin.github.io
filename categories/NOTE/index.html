@@ -1757,7 +1757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1735149007111),
+    lastupdate: new Date(1735248092014),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc","lastupdate"],
@@ -2499,8 +2499,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         源视频教程地址
-崩铁主题地址ps：ventoy基于GRUB，因此使用GRUB主题
-​		ventoy支持多个主题，可默认使用某一个或随机启动
+崩铁主题地址
+ps：
+ventoy基于GRUB，因此使用GRUB主题
+
+ventoy支持多个主题，可默认使用某一个或随机启动
+
+
 放入主题文件
 ventoy非系统分区下新建ventoy文件夹
 ventoy文件夹下建themes文件夹
@@ -2510,7 +2515,7 @@ ventoy文件夹下建themes文件夹
 复制到themes中
 
 配置ventoy
-打开图吧工具箱/tools/其他工...
+打开图吧工具箱/tools/其...
       
     
   </div>
@@ -2575,11 +2580,11 @@ ventoy文件夹下建themes文件夹
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Arch Linux安装1. 验证启动模式（BIOS&#x2F;UEFI）可以列出 efivars 目录以验证启动模式：
+        Arch Linux安装1. 验证启动模式（BIOS&#x2F;UEFI）列出 efivars 目录以验证启动模式：
 1ls /sys/firmware/efi/efivars
 
 如果目录不存在，系统可能以 BIOS 或 CSM 模式启动。
-如果目录存在。系统就是以UEFI启动。
+如果目录存在，系统以UEFI启动。
 2. 连接网络（三选一）
 网线连接
 
@@ -2591,7 +2596,7 @@ WiFi连接
 1wifi-menu
 
 
-ADSL...
+ADSL宽带连接...
       
     
   </div>
@@ -2641,7 +2646,7 @@ ADSL...
   
     <div class='headimg-div'>
       <a class='headimg-a' href="/2024/12/18/github-domain/">
-        <img itemprop="image" class='headimg' alt="github.io绑定域名" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
+        <img itemprop="image" class='headimg' alt="给部署在github的博客套个域名" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
       </a>
     </div>
   
@@ -2649,26 +2654,24 @@ ADSL...
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2024/12/18/github-domain/"  itemprop="url">
-        github.io绑定域名
+        给部署在github的博客套个域名
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        
-在 GitHub Pages 仓库新建 CNAME 文件填入域名
+        1. 博客源
+在 source 文件夹新建 CNAME 文件，内容为域名
 
+2. GitHub
 进入 GitHub Pages 仓库的 Settings 界面
-
 Settings -&gt; Pages -&gt; Custom domain：&lt;域名&gt;
 
-添加域名解析
+3. Cloudflare
+添加域名解析记录
 
-Cloudflare-&gt; 账户主页 -&gt; 域名 -&gt; DNS记录
-
-分别为www和@添加4个A记录
-185.199.1...
+Cloudflare-&gt; 账户主页 -&gt; 域名 -&gt; DNS记...
       
     
   </div>
@@ -2718,7 +2721,7 @@ Cloudflare-&gt; 账户主页 -&gt; 域名 -&gt; DNS记录
   
     <div class='headimg-div'>
       <a class='headimg-a' href="/2024/12/18/botfather/">
-        <img itemprop="image" class='headimg' alt="botfather" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
+        <img itemprop="image" class='headimg' alt="botfather指令集" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
       </a>
     </div>
   
@@ -2726,15 +2729,16 @@ Cloudflare-&gt; 账户主页 -&gt; 域名 -&gt; DNS记录
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2024/12/18/botfather/"  itemprop="url">
-        botfather
+        botfather指令集
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        botfather指令&#x2F;newbot创建一个新的机器人&#x2F;mybots编辑你的机器人
-编辑机器人&#x2F;setname更改机器人的名称&#x2F;setdescription更改机器人描述&#x2F;setabouttext更改机器人信息&#x2F;setuserpic更改机器人个人资料照片&#x2F;setcommands更改命令列表&#x2F;deletebot –...
+        &#x2F;newbot创建一个新的机器人&#x2F;mybots编辑你的机器人
+编辑机器人&#x2F;setname更改机器人的名称&#x2F;setdescription更改机器人描述&#x2F;setabouttext更改机器人信息&#x2F;setuserpic更改机器人个人资料照片&#x2F;setcommands更改命令列表&#x2F;deletebot – 删除机器人
+机器人设...
       
     
   </div>
@@ -2866,7 +2870,7 @@ qrencode
   
     <div class='headimg-div'>
       <a class='headimg-a' href="/2024/12/17/domain-name/">
-        <img itemprop="image" class='headimg' alt="将namesilo域名解析到cloudflare并使用acme为域名申请证书并在uhttpd上配置（ipv6）" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
+        <img itemprop="image" class='headimg' alt="immortalwrt域名解析&DDNS&申请证书" src='https://s2.loli.net/2024/10/07/cRxai3KduX4yp9O.jpg'/>
       </a>
     </div>
   
@@ -2874,7 +2878,7 @@ qrencode
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2024/12/17/domain-name/"  itemprop="url">
-        将namesilo域名解析到cloudflare并使用acme为域名申请证书并在uhttpd上配置（ipv6）
+        immortalwrt域名解析&DDNS&申请证书
       </a>
     </h2>
   
@@ -2882,7 +2886,6 @@ qrencode
     
       
         简介：
-
 基于IPv6
 
 将Namesilo域名解析到Cloudflare
@@ -2902,7 +2905,7 @@ Cloudflare仪表盘
 1. Cloudflare添加域名
 进入Cloudflare仪表盘添加域名
 现有域：&lt;域名&gt;
-选择F...
+选择Fr...
       
     
   </div>
@@ -2952,7 +2955,7 @@ Cloudflare仪表盘
   
     <div class='headimg-div'>
       <a class='headimg-a' href="/2024/12/13/win-system/">
-        <img itemprop="image" class='headimg' alt="Windows系统备份还原&切换版本激活工具&ipv4无internet但ipv6正常" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
+        <img itemprop="image" class='headimg' alt="Windows系统相关" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
       </a>
     </div>
   
@@ -2960,30 +2963,32 @@ Cloudflare仪表盘
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2024/12/13/win-system/"  itemprop="url">
-        Windows系统备份还原&切换版本激活工具&ipv4无internet但ipv6正常
+        Windows系统相关
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        备份还原备份
+        简介：
+Windows系统备份还原
+切换版本激活工具
+ipv4无internet但ipv6正常
 
+备份还原备份
 进PE
-用dism++备份（已使用dism++备份成功）
+用dism++备份
 记得备份在系统盘外
 
 还原
-
 进PE
 用CGI还原，选择备份分区，选择还原分区，选择要还原的镜像（.gho .wim）
 开始执行
 
 切换版本&amp;激活工具文档
-传统下载 &#x2F; PowerShell
-
-下载链接进文档找
-PowerShell输入irm https://get.activated.win | i...
+使用方式
+传统下载：下载链接见文档
+PowerShell：输入irm https://get...
       
     
   </div>
@@ -3049,7 +3054,6 @@ PowerShell输入irm https://get.activated.win | i...
     
       
         简介：
-
 在软路由上使用为Namesilo域名颁发ACME证书并在uHTTPd上配置
 已弃用Namesilo解析：解析速度慢，常访问不上
 
@@ -3063,7 +3067,7 @@ PowerShell输入irm https://get.activated.win | i...
 
 质询验证 -&gt; DNS API: dns_namesilo
 
-质询验证 -&gt;...
+质询验证 -&gt; ...
       
     
   </div>
@@ -3323,7 +3327,7 @@ PowerShell输入irm https://get.activated.win | i...
 
 
     <div class='content'>
-      <a href="/tags/ACME/" style="font-size: 19px; color: #777">ACME</a> <a href="/tags/Android-Studio/" style="font-size: 14px; color: #999">Android Studio</a> <a href="/tags/Arch-Linux/" style="font-size: 14px; color: #999">Arch Linux</a> <a href="/tags/CSS/" style="font-size: 14px; color: #999">CSS</a> <a href="/tags/Cloudflare/" style="font-size: 19px; color: #777">Cloudflare</a> <a href="/tags/GRUB/" style="font-size: 14px; color: #999">GRUB</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/IPv6/" style="font-size: 24px; color: #555">IPv6</a> <a href="/tags/KDE/" style="font-size: 14px; color: #999">KDE</a> <a href="/tags/Namesilo/" style="font-size: 19px; color: #777">Namesilo</a> <a href="/tags/TSL%E8%AF%81%E4%B9%A6/" style="font-size: 19px; color: #777">TSL证书</a> <a href="/tags/WSL/" style="font-size: 14px; color: #999">WSL</a> <a href="/tags/Webhook/" style="font-size: 19px; color: #777">Webhook</a> <a href="/tags/Windows/" style="font-size: 19px; color: #777">Windows</a> <a href="/tags/WireGuard/" style="font-size: 14px; color: #999">WireGuard</a> <a href="/tags/botfather/" style="font-size: 14px; color: #999">botfather</a> <a href="/tags/ddns-go/" style="font-size: 14px; color: #999">ddns-go</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/hexo/" style="font-size: 19px; color: #777">hexo</a> <a href="/tags/immortalwrt/" style="font-size: 24px; color: #555">immortalwrt</a> <a href="/tags/kali/" style="font-size: 14px; color: #999">kali</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/uHTTPd/" style="font-size: 19px; color: #777">uHTTPd</a> <a href="/tags/ventoy/" style="font-size: 14px; color: #999">ventoy</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 19px; color: #777">域名</a> <a href="/tags/%E5%A4%87%E4%BB%BD/" style="font-size: 14px; color: #999">备份</a> <a href="/tags/%E6%BF%80%E6%B4%BB/" style="font-size: 14px; color: #999">激活</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">网络异常</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 14px; color: #999">证书</a> <a href="/tags/%E8%BF%98%E5%8E%9F/" style="font-size: 14px; color: #999">还原</a>
+      <a href="/tags/ACME/" style="font-size: 19px; color: #777">ACME</a> <a href="/tags/Android-Studio/" style="font-size: 14px; color: #999">Android Studio</a> <a href="/tags/Arch-Linux/" style="font-size: 14px; color: #999">Arch Linux</a> <a href="/tags/CSS/" style="font-size: 14px; color: #999">CSS</a> <a href="/tags/Cloudflare/" style="font-size: 19px; color: #777">Cloudflare</a> <a href="/tags/GRUB/" style="font-size: 14px; color: #999">GRUB</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/IPv6/" style="font-size: 24px; color: #555">IPv6</a> <a href="/tags/KDE/" style="font-size: 14px; color: #999">KDE</a> <a href="/tags/Namesilo/" style="font-size: 19px; color: #777">Namesilo</a> <a href="/tags/TSL%E8%AF%81%E4%B9%A6/" style="font-size: 19px; color: #777">TSL证书</a> <a href="/tags/WSL/" style="font-size: 14px; color: #999">WSL</a> <a href="/tags/Webhook/" style="font-size: 19px; color: #777">Webhook</a> <a href="/tags/Windows/" style="font-size: 19px; color: #777">Windows</a> <a href="/tags/Windows%E6%BF%80%E6%B4%BB/" style="font-size: 14px; color: #999">Windows激活</a> <a href="/tags/WireGuard/" style="font-size: 14px; color: #999">WireGuard</a> <a href="/tags/botfather/" style="font-size: 14px; color: #999">botfather</a> <a href="/tags/ddns-go/" style="font-size: 14px; color: #999">ddns-go</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/hexo/" style="font-size: 19px; color: #777">hexo</a> <a href="/tags/immortalwrt/" style="font-size: 24px; color: #555">immortalwrt</a> <a href="/tags/kali/" style="font-size: 14px; color: #999">kali</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/uHTTPd/" style="font-size: 19px; color: #777">uHTTPd</a> <a href="/tags/ventoy/" style="font-size: 14px; color: #999">ventoy</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 19px; color: #777">域名</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%A4%87%E4%BB%BD/" style="font-size: 14px; color: #999">系统备份</a> <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%98%E5%8E%9F/" style="font-size: 14px; color: #999">系统还原</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">网络异常</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 14px; color: #999">证书</a>
     </div>
   </section>
 
@@ -3375,7 +3379,7 @@ PowerShell输入irm https://get.activated.win | i...
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-12-26 日</div>
+          <div id="last-update-show">2024-12-27 日</div>
         </div>
       
     </div>
@@ -3400,7 +3404,7 @@ PowerShell输入irm https://get.activated.win | i...
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/11/29/kali_arch/"><div class="item"><time>2024-12-23</time><span>NOTE</span></div><span>安装kali(btrfs)&Arch双系统</span></a></li><li><a class="widget-last" href="/2024/12/20/ventoy/"><div class="item"><time>2024-12-20</time><span>NOTE</span></div><span>ventoy美化（崩铁主题）</span></a></li><li><a class="widget-last" href="/2024/12/18/archlinux/"><div class="item"><time>2024-12-19</time><span>NOTE</span></div><span>Arch Linux & 桌面环境（KDE）安装</span></a></li><li><a class="widget-last" href="/2024/12/18/github-domain/"><div class="item"><time>2024-12-18</time><span>NOTE</span></div><span>github.io绑定域名</span></a></li><li><a class="widget-last" href="/2024/10/06/hexo/"><div class="item"><time>2024-12-18</time><span>NOTE</span></div><span>Hexo备忘</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/12/20/ventoy/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>ventoy美化（崩铁主题）</span></a></li><li><a class="widget-last" href="/2024/12/18/archlinux/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>Arch Linux & 桌面环境（KDE）安装</span></a></li><li><a class="widget-last" href="/2024/12/18/github-domain/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>给部署在github的博客套个域名</span></a></li><li><a class="widget-last" href="/2024/12/18/botfather/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>botfather指令集</span></a></li><li><a class="widget-last" href="/2024/12/17/domain-name/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>immortalwrt域名解析&DDNS&申请证书</span></a></li></ul>
   </div>
 </section>
 

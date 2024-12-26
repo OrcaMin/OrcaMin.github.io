@@ -41,11 +41,11 @@
 <meta property="og:title" content="颁发ACME证书以及遇到的问题（Namesilo）">
 <meta property="og:url" content="https://orcamin.github.io/2024/12/08/Namesilo_ACME/index.html">
 <meta property="og:site_name" content="龟壳">
-<meta property="og:description" content="简介：  在软路由上使用为Namesilo域名颁发ACME证书并在uHTTPd上配置 已弃用Namesilo解析：解析速度慢，常访问不上  申请证书服务 -&gt; ACME证书 -&gt; 添加  常规设置 -&gt; 启用√  常规设置 -&gt; 域名  质询验证 -&gt; 验证方式: DNS  质询验证 -&gt; DNS API: dns_namesilo  质询验证 -&gt; DN">
+<meta property="og:description" content="简介： 在软路由上使用为Namesilo域名颁发ACME证书并在uHTTPd上配置 已弃用Namesilo解析：解析速度慢，常访问不上  申请证书服务 -&gt; ACME证书 -&gt; 添加  常规设置 -&gt; 启用√  常规设置 -&gt; 域名  质询验证 -&gt; 验证方式: DNS  质询验证 -&gt; DNS API: dns_namesilo  质询验证 -&gt; DNS">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-12-08T15:40:36.000Z">
-<meta property="article:modified_time" content="2024-12-17T18:28:00.057Z">
+<meta property="article:modified_time" content="2024-12-26T20:40:09.749Z">
 <meta property="article:author" content="Orca">
 <meta property="article:tag" content="immortalwrt">
 <meta property="article:tag" content="TSL证书">
@@ -1766,7 +1766,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1735149007111),
+    lastupdate: new Date(1735248092014),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc","lastupdate"],
@@ -2509,10 +2509,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-18T02:28:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-27T04:40:09+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 18, 2024</p>
+    <p>更新于：Dec 27, 2024</p>
   </a>
 </div>
 
@@ -2551,8 +2551,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>简介：</p>
-<ul>
+    <h6 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h6><ul>
 <li>在软路由上使用为Namesilo域名颁发ACME证书并在uHTTPd上配置</li>
 <li>已弃用Namesilo解析：解析速度慢，常访问不上</li>
 </ul>
@@ -2580,10 +2579,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>等几分钟，使用一台局域网外的设备访问网站进行验证证书是否生效</p>
 <p>注意事项：1. 端口号记得填上</p>
 <p>​				   2. 必须公网ipv6访问，在局域网内则使用默认端口</p>
-<h6 id="问题：证书没有生成"><a href="#问题：证书没有生成" class="headerlink" title="问题：证书没有生成"></a>问题：证书没有生成</h6><p>解决：ssh</p>
+<h5 id="问题1：证书没有生成"><a href="#问题1：证书没有生成" class="headerlink" title="问题1：证书没有生成"></a>问题1：证书没有生成</h5><p>解决：ssh</p>
 <p><code>/etc/init.d/acme</code>查看相关指令</p>
 <p><code>/etc/init.d/acme restart</code>重新申请查看错误日志排错</p>
-<h6 id="问题：密钥生成完成并配置完了但是作死点了删除旧证书和密钥导致证书变回自签证书"><a href="#问题：密钥生成完成并配置完了但是作死点了删除旧证书和密钥导致证书变回自签证书" class="headerlink" title="问题：密钥生成完成并配置完了但是作死点了删除旧证书和密钥导致证书变回自签证书"></a>问题：密钥生成完成并配置完了但是作死点了删除旧证书和密钥导致证书变回自签证书</h6><p>解决：</p>
+<h5 id="问题2：作死点删除旧证书和密钥导致变回自签证书"><a href="#问题2：作死点删除旧证书和密钥导致变回自签证书" class="headerlink" title="问题2：作死点删除旧证书和密钥导致变回自签证书"></a>问题2：作死点删除旧证书和密钥导致变回自签证书</h5><p>解决：</p>
 <ul>
 <li>前提：开启SSH</li>
 <li>把现在的证书和密钥拷到&#x2F;etc（改名为uhttpd.cer和uhttpd.key好认点）</li>
@@ -2641,10 +2640,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-18T02:28:00+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-27T04:40:09+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 18, 2024</p>
+    <p>更新于：Dec 27, 2024</p>
   </a>
 </div>
 
@@ -2675,18 +2674,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/2024/12/13/win-system/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Windows系统备份还原&切换版本激活工具&ipv4无internet但ipv6正常</p>
-          <p class='content'>备份还原备份
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Windows系统相关</p>
+          <p class='content'>简介：
+Windows系统备份还原
+切换版本激活工具
+ipv4无internet但ipv6正常
 
+备份还原备份
 进PE
-用dism++备份（已使用dism++备份成功）
+用dism++备份
 记得备份在系统盘外
 
 还原
-
 进PE
-用CGI还原，选择备份分区，选择还原分区，选择要还原的镜像（.gho .wim）
-...</p>
+用CGI还原，选择...</p>
         </a>
       
       
@@ -2748,7 +2749,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/11/29/kali_arch/"><div class="item"><time>2024-12-23</time><span>NOTE</span></div><span>安装kali(btrfs)&Arch双系统</span></a></li><li><a class="widget-last" href="/2024/12/20/ventoy/"><div class="item"><time>2024-12-20</time><span>NOTE</span></div><span>ventoy美化（崩铁主题）</span></a></li><li><a class="widget-last" href="/2024/12/18/archlinux/"><div class="item"><time>2024-12-19</time><span>NOTE</span></div><span>Arch Linux & 桌面环境（KDE）安装</span></a></li><li><a class="widget-last" href="/2024/12/18/github-domain/"><div class="item"><time>2024-12-18</time><span>NOTE</span></div><span>github.io绑定域名</span></a></li><li><a class="widget-last" href="/2024/10/06/hexo/"><div class="item"><time>2024-12-18</time><span>NOTE</span></div><span>Hexo备忘</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/12/20/ventoy/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>ventoy美化（崩铁主题）</span></a></li><li><a class="widget-last" href="/2024/12/18/archlinux/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>Arch Linux & 桌面环境（KDE）安装</span></a></li><li><a class="widget-last" href="/2024/12/18/github-domain/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>给部署在github的博客套个域名</span></a></li><li><a class="widget-last" href="/2024/12/18/botfather/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>botfather指令集</span></a></li><li><a class="widget-last" href="/2024/12/17/domain-name/"><div class="item"><time>2024-12-27</time><span>NOTE</span></div><span>immortalwrt域名解析&DDNS&申请证书</span></a></li></ul>
   </div>
 </section>
 
@@ -2772,7 +2773,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B3%E8%AF%B7%E8%AF%81%E4%B9%A6"><span class="toc-text">申请证书</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEuHTTPd"><span class="toc-text">配置uHTTPd</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B3%E8%AF%B7%E8%AF%81%E4%B9%A6"><span class="toc-text">申请证书</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEuHTTPd"><span class="toc-text">配置uHTTPd</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%97%AE%E9%A2%981%EF%BC%9A%E8%AF%81%E4%B9%A6%E6%B2%A1%E6%9C%89%E7%94%9F%E6%88%90"><span class="toc-text">问题1：证书没有生成</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%97%AE%E9%A2%982%EF%BC%9A%E4%BD%9C%E6%AD%BB%E7%82%B9%E5%88%A0%E9%99%A4%E6%97%A7%E8%AF%81%E4%B9%A6%E5%92%8C%E5%AF%86%E9%92%A5%E5%AF%BC%E8%87%B4%E5%8F%98%E5%9B%9E%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6"><span class="toc-text">问题2：作死点删除旧证书和密钥导致变回自签证书</span></a></li></ol>
     </div>
   </section>
 
@@ -3770,7 +3771,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/","name":"颁发ACME证书以及遇到的问题（Namesilo）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"颁发ACME证书以及遇到的问题（Namesilo）","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/","wordCount":0,"datePublished":"2024-12-08T15:40:36.000Z","dateModified":"2024-12-17T18:28:00.057Z","articleSection":"NOTE","keywords":"immortalwrt,TSL证书,IPv6,Namesilo,ACME,uHTTPd,证书","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/EGl2R8zQmMUSo4L.webp","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/categories/NOTE/","name":"NOTE"}},{"@type":"ListItem","position":3,"item":{"@id":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/","name":"颁发ACME证书以及遇到的问题（Namesilo）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"颁发ACME证书以及遇到的问题（Namesilo）","description":"如题","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://orcamin.github.io/2024/12/08/Namesilo_ACME/","wordCount":0,"datePublished":"2024-12-08T15:40:36.000Z","dateModified":"2024-12-26T20:40:09.749Z","articleSection":"NOTE","keywords":"immortalwrt,TSL证书,IPv6,Namesilo,ACME,uHTTPd,证书","image":{"@type":"ImageObject","url":"https://s2.loli.net/2024/10/07/EGl2R8zQmMUSo4L.webp","width":1024,"height":768}}]</script>
 
 
 
