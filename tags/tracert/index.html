@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://orcamin.github.io/tags/网络异常/"/>
+  <link rel="canonical" href="https://orcamin.github.io/tags/tracert/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,13 +34,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：网络异常 - 龟壳</title>
+  <title>标签：tracert - 龟壳</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="如题 - Orca - 龟壳">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="龟壳">
-<meta property="og:url" content="https://orcamin.github.io/tags/%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8/index.html">
+<meta property="og:url" content="https://orcamin.github.io/tags/tracert/index.html">
 <meta property="og:site_name" content="龟壳">
 <meta property="og:description" content="如题">
 <meta property="og:locale" content="zh_CN">
@@ -2453,7 +2453,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/13/win-system/">
+  <link itemprop="mainEntityOfPage" href="https://orcamin.github.io/2024/12/28/cs144/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="龟壳">
   </span>
@@ -2465,41 +2465,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/12/13/win-system/">
-        <img itemprop="image" class='headimg' alt="Windows系统相关" src='https://s2.loli.net/2024/10/07/sjNmq1gZWyOXPGT.webp'/>
+      <a class='headimg-a' href="/2024/12/28/cs144/">
+        <img itemprop="image" class='headimg' alt="cs144" src='https://raw.githubusercontent.com/Orcamin/pictures/main/sukoya_live.jpg'/>
       </a>
     </div>
   
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/13/win-system/"  itemprop="url">
-        Windows系统相关
+      <a href="/2024/12/28/cs144/"  itemprop="url">
+        cs144
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        简介：
-Windows系统备份还原
-切换版本激活工具
-ipv4无internet但ipv6正常
+        通过wireshark观察三次握手
+观察浏览器向网络服务器打开TCP连接，使用SYN、SYNAC、ACK的三次握手
 
-备份还原备份
-进PE
-用dism++备份
-记得备份在系统盘外
-
-还原
-进PE
-用CGI还原，选择备份分区，选择还原分区，选择要还原的镜像（.gho .wim）
-开始执行
-
-切换版本&amp;激活工具文档
-使用方式
-传统下载：下载链接见文档
-PowerShell：输入irm https://get...
+在Filter输入
+1tcp.port == 443 &amp;&amp; ip.addr == 104.18.2.173
+tcp.port：向服务器发送TCP分段的端口
+443：HTTPS默认端口
+104.18.2.173：www.brown.edu的ip地址...
       
     
   </div>
@@ -2507,7 +2496,7 @@ PowerShell：输入irm https://get...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-12-13T22:28:43+08:00">2024-12-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-12-28T05:44:03+08:00">2024-12-28</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/NOTE/">NOTE</a>
@@ -2520,7 +2509,7 @@ PowerShell：输入irm https://get...
       </div>
       
         <div>
-          <a class='readmore' href='/2024/12/13/win-system/' itemprop="url">
+          <a class='readmore' href='/2024/12/28/cs144/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3680,7 +3669,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/tags/网络异常/","name":"网络异常"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","sameAs":["https://github.com/volantis-x"],"description":"如题"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://orcamin.github.io/","name":"龟壳"}},{"@type":"ListItem","position":2,"item":{"@id":"https://orcamin.github.io/tags/tracert/","name":"tracert"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"龟壳","url":"https://orcamin.github.io/","keywords":null,"description":"如题","author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/","description":"如题"},"publisher":{"@type":"Organization","name":"龟壳","url":"https://orcamin.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://orcamin.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"如题","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Orca","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://orcamin.github.io/"},"publisher":{"@type":"Organization","name":"龟壳","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
